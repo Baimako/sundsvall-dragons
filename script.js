@@ -1,12 +1,18 @@
+const toggleBtn = document.getElementById("toggle-color");
+const weatherCont= document.getElementById('weather');
+
+toggleBtn.addEventListener("click", () => {
+  document.documentElement.classList.toggle("light");
+});
+
+const KEY = window.CONFIG.WEATHER_API_KEY;
 
 getWeatherData();
 
 async function getWeatherData() {
-const long = 62.39129;
-const lat = 17.3063;
-const KEY = window.CONFIG.WEATHER_API_KEY;
-
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${KEY}&units=metric`
+    const lat = 62.39129;
+    const lon = 17.3063;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${KEY}&units=metric`
   try {
     const response = await fetch(url);
     if (!response.ok) {console.log(`${response.status}`)}
@@ -22,12 +28,9 @@ const KEY = window.CONFIG.WEATHER_API_KEY;
     const img = document.createElement('img');
     img.src = iconUrl;
     img.alt = desc;
-    const weatherCont = document.createElement('div');
-    weatherCont.classList.add("weather-div");
 
     weatherCont.textContent = `Just nu: Sundsvall ${temp}°C, ${weather}: ${desc}`
     weatherCont.prepend(img);
-    document.getElementById('weather').append(weatherCont);
   }
   catch (error) {
     console.error(error.message)
