@@ -126,3 +126,14 @@ footer a:hover {
     flex-direction: column;
   }
 }
+.about {
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: lightgray;
+  border-radius: 10px;
+  list-style: disc;
+  display: inline-block;
+}
