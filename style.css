@@ -1,15 +1,11 @@
 /* Navbar */
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 8rem;
   position: static;
-  top: 0;
   overflow: hidden;
-  z-index: 1;
-  color: var(--white);
 }
 
 nav ul {
@@ -34,6 +30,40 @@ nav a:visited {
   pointer-events: none;
 }
 
+/* About Us */
+.about-us {
+  text-align: center;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  max-width: 40rem;
+  border-radius: 5px;
+  color: var(--white);
+  margin: 0 3rem 2rem 3rem;
+}
+
+.card img {
+  width: 270px;
+  height: 270px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 80% 10%;
+}
+
+.card a {
+  text-decoration: none;
+}
+
 /* Footer */
 footer {
   padding: 1.5rem 0;
@@ -50,12 +80,13 @@ footer ul {
 footer li {
   margin-left: 2rem;
   list-style-type: none;
+  text-decoration: none;
 }
 
 footer a:hover {
   border: none;
-  color: var(--accent-color);
 }
+
 @media (max-width: 750px) {
   footer {
     flex-direction: column;
