@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sundsvall Dragons Hackaton</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav>
+      <p class="logo"><a href="/">Sundsvall Dragons</a></p>
+      <ul>
+        <li><a href="#cv">Länk 1</a></li>
+        <li><a href="#about">Länk 2</a></li>
+      </ul>
+    </nav>
     <header>
-      <h1>Välkommen till Sundsvall Dragons Hackaton-sida!</h1>
-      <section class="hero">
+      <section class="about">
+        <h1>Välkommen till Sundsvall Dragons Hackaton-sida!</h1>
         <h2>Det är vi som är Sundsvall Dragons</h2>
-        <p>Sundsvall Dragons består av oss:</p>
         <ul>
           <li>Max</li>
           <li>Elias</li>
@@ -20,11 +26,71 @@
           <li>Isabelle</li>
           <li>Alyanna</li>
         </ul>
+        <img src="" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+          quae quod eius tempore in ad cupiditate deleniti dolor! Nam, hic. Unde
+          vitae amet earum facere quisquam numquam eos, recusandae assumenda?
+        </p>
       </section>
     </header>
 
     <button id="toggle-color">Dark/Light mode</button>
     <div id="weather"></div>
+
+    <main>
+      <section class="about-us">
+        <h2>Möt vårat Team</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="/assets/images/max-mattiasson.png" alt="Max Mattiasson" />
+            <h3>Max Mattiasson</h3>
+            <a href="">Läs mer om Max</a>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/sascha.jpg" alt="Sascha Bergenås" />
+            <h3>Sascha Bergenås</h3>
+            <a href="">Läs mer om Sascha</a>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/isabelle.JPG" alt="Isabelle Franzén" />
+            <h3>Isabelle Franzén</h3>
+            <a href="">Läs mer om Isabelle</a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <img src="/assets/images/elias.jpg" alt="Elias " />
+            <h3>Elias</h3>
+            <a href="">Läs mer om Elias</a>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/alyanna.jpg" alt="Alyanna Karlsson" />
+            <h3>Alyanna Karlsson</h3>
+            <a href="">Läs mer om Alyanna</a>
+          </div>
+
+          <div class="card">
+            <img src="/assets/images/bjorn.jpg" alt="Björn" />
+            <h3>Björn Boman</h3>
+            <a href="">Läs mer om Björn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#about">Portfolio</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </footer>
+
     <script src="config.js"></script>
     <script src="script.js"></script>
   </body>

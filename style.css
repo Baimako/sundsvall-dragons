@@ -17,3 +17,97 @@ body {
   background-color: var(--bg);
   color: var(--text);
 }
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 8rem;
+  position: static;
+  overflow: hidden;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+/* About Us */
+.about-us {
+  text-align: center;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  max-width: 40rem;
+  border-radius: 5px;
+  color: var(--white);
+  margin: 0 3rem 2rem 3rem;
+}
+
+.card img {
+  width: 270px;
+  height: 270px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 80% 10%;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 0;
+  color: var(--white);
+  text-align: center;
+  background: var(--black);
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin-left: 2rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+footer a:hover {
+  border: none;
+}
+
+@media (max-width: 750px) {
+  footer {
+    flex-direction: column;
+  }
+}
