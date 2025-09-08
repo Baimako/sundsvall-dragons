@@ -37,6 +37,10 @@ nav li {
   font-size: 1.2rem;
 }
 
+nav li:hover {
+  color: var(--accent-color);
+}
+
 nav a,
 nav a:visited {
   text-decoration: none;
