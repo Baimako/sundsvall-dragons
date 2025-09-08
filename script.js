@@ -1,5 +1,10 @@
 const toggleBtn = document.getElementById("toggle-color");
 const weatherCont= document.getElementById('weather');
+const toTopBtn = document.getElementById('to-top');
+
+toTopBtn.addEventListener('click', () => {
+    
+})
 
 toggleBtn.addEventListener("click", () => {
   document.documentElement.classList.toggle("light");
